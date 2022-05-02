@@ -1,0 +1,33 @@
+{
+    "name": "shift-claims-queue-processor",
+    "version": "v1.0.0",
+    "scripts": {
+        "start": "node --trace-deprecation ./bin/server",
+        "debug": "node --inspect-brk ./bin/server",
+        "test": "jest",
+        "coverage": "jest --noStackTrace --coverage"
+    },
+    "dependencies": {
+        "amqplib": "^0.8.0",
+        "axios": "^0.27.2",
+        "debug": "~2.6.9",
+        "dotenv": "^10.0.0",
+        "lodash": "^4.17.21",
+        "morgan": "~1.9.1",
+        "redis": "^4.0.6",
+        "winston": "^3.6.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.3",
+        "@babel/core": "^7.17.4",
+        "@babel/node": "^7.16.8",
+        "@babel/preset-env": "^7.16.11",
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.23",
+        "jest": "^28.0.3",
+        "redis-mock": "^0.56.3",
+        "sinon": "^13.0.2",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
+}
